@@ -9,7 +9,7 @@ import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 import java.math.BigInteger;
 
-@Service
+@Service("soapClientServiceImpl")
 public class SoapClientServiceImpl extends WebServiceGatewaySupport implements SoapClientService {
     @Value("WSDL.SOAPClient")
     private String endpoint;
